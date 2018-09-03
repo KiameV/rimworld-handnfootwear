@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Handwear</defName>
+		<label>handwear</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Footwear</defName>
+		<label>footwear</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+</Defs>

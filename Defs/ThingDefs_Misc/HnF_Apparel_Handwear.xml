@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- bases -->
+  <ThingDef Name="HandwearMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>Handwear</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef Name="HandArmorMakeableBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <thingCategories>
+      <li>Handwear</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+  <!-- ========== Gloves ========== -->
+
+  <ThingDef ParentName="HandwearMakeableBase">
+    <defName>Apparel_Gloves</defName>
+    <label>gloves</label>
+    <description>A matching pair of gloves to protect your hands and all eight fingers!</description>
+    <graphicData>
+      <texPath>Handwear/Gloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>24</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.1</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <apparel>
+      <tags>
+        <li>Outlander</li>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- ========== Dexterous Gloves ========== -->
+
+  <ThingDef>
+  	<thingClass>Apparel</thingClass>
+  	<category>Item</category>
+  	<selectable>True</selectable>
+  	<pathCost>10</pathCost>
+  	<useHitPoints>True</useHitPoints>
+  	<techLevel>Spacer</techLevel>
+    <defName>Apparel_DexterousGloves</defName>
+    <label>dexterous gloves</label>
+    <description>High-tech, unconventionally-designed, glitterworld-produced gloves that take ergonomics to the extreme; so much so that many dexterous tasks are actually carried out more efficiently than normal.</description>
+    <generateCommonality>0.05</generateCommonality>
+    <graphicData>
+    	<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+      <texPath>Handwear/DexterousGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <drawGUIOverlay>True</drawGUIOverlay>
+    <thingCategories>
+      <li>Handwear</li>
+    </thingCategories>
+    <statBases>
+    	<MarketValue>900</MarketValue>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-4</Beauty>
+      <SellPriceFactor>0.7</SellPriceFactor>
+      <Mass>0.12</Mass>
+    </statBases>
+    <equippedStatOffsets>
+    	<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+    	<MeleeHitChance>0.1</MeleeHitChance>
+    	<AimingDelayFactor>-0.1</AimingDelayFactor>
+    </equippedStatOffsets>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+    	<li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <apparel>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <!-- ========== Plated Gloves ========== -->
+
+  <ThingDef ParentName="HandArmorMakeableBase">
+    <defName>Apparel_PlatedGloves</defName>
+    <label>plated gloves</label>
+    <description>A bulky pair of gloves fit for protecting one's hands during the heat of battle.</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Handwear/PlatedGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>7200</WorkToMake>
+      <Mass>2.5</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>0.5</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+  <!-- ========== Power Gloves ========== -->
+
+  <ThingDef ParentName="HandArmorMakeableBase">
+    <defName>Apparel_PowerGloves</defName>
+    <label>power gloves</label>
+    <description>Gloves for a suit of powered armor.</description>
+    <recipeMaker>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Handwear/PlatedGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+        <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.17</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>25</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>10</Plasteel>
+      <Uranium>2</Uranium>
+    </costList>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+</Defs>
