@@ -239,7 +239,7 @@
       <EquipDelay>15</EquipDelay>
     </statBases>
     <costList>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
       <Plasteel>10</Plasteel>
       <Uranium>2</Uranium>
     </costList>
