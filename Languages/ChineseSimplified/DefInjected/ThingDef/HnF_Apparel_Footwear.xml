@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Apparel_Shoes.label>鞋子</Apparel_Shoes.label>
+  <Apparel_Shoes.description>一双基本、轻便的鞋子。</Apparel_Shoes.description>
+  <Apparel_TribalBoots.label>部落靴</Apparel_TribalBoots.label>
+  <Apparel_TribalBoots.description>用动物皮做成的又大又结实的靴子。</Apparel_TribalBoots.description>
+  <Apparel_CowboyBoots.label>牛仔靴</Apparel_CowboyBoots.label>
+  <Apparel_CowboyBoots.description>一双时髦、耐磨的牛仔靴。</Apparel_CowboyBoots.description>
+  <Apparel_CombatBoots.label>镀靴</Apparel_CombatBoots.label>
+  <Apparel_CombatBoots.description>笨重的靴子，保护双脚免受各种形式的伤害。</Apparel_CombatBoots.description>
+  <Apparel_PowerBoots.label>动力靴</Apparel_PowerBoots.label>
+  <Apparel_PowerBoots.description>一双动力装甲的靴子。</Apparel_PowerBoots.description>
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Apparel_Gloves.label>手套</Apparel_Gloves.label>
+  <Apparel_Gloves.description>一双配套的手套，保护你的双手和八个手指！</Apparel_Gloves.description>
+  <Apparel_DexterousGloves.label>灵巧手套</Apparel_DexterousGloves.label>
+  <Apparel_DexterousGloves.description>高科技，非常规设计，闪光世界生产的手套，把人体工程学发挥到极致；因此，穿戴它做许多灵巧的工作实际上比正常情况下效率更高。</Apparel_DexterousGloves.description>
+  <Apparel_PlatedGloves.label>电镀手套</Apparel_PlatedGloves.label>
+  <Apparel_PlatedGloves.description>在激烈战斗中保护双手的笨重手套。</Apparel_PlatedGloves.description>
+  <Apparel_PowerGloves.label>动力手套</Apparel_PowerGloves.label>
+  <Apparel_PowerGloves.description>一双动力装甲的手套。</Apparel_PowerGloves.description>
+</LanguageData>
